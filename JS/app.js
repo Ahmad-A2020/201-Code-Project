@@ -2,10 +2,13 @@
 // To add counter of correct answer, I have used correctAnswer+=1
 let correctAnswer=0
 // This is for user name. 
+function userName(){
 let userName=prompt("What is your name"); 
 alert("welcome to my website "+userName+" let us start ");
-
+}
+userName();
 // This is for geuss color 
+
 let myColor=prompt("is blue is my favirout color?");
 myColor=myColor.toLowerCase();
 if (myColor=="yes"|| myColor== "y") {
