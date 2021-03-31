@@ -29,21 +29,25 @@ function faviroutColor(){
 faviroutColor();
 
 // This is for geuss my age 
-let Age=prompt("is 28 is my age?");
-Age=Age.toLowerCase();
-if (Age=="yes" || Age=="y") {
-    alert("you are right");
-    console.log("you are correct my age is 28");
-    correctAnswer+=1
-    
-} else if(Age=="no" || Age=="n"){
-    alert("that is not correct, I am 28 year old ");
-    console.log("that is not correct,  I am 28 year old ");
-    
-} else {
-    alert("you made wrong insert, any way I am 28 year old ");
-    console.log("you made wrong insert, any way I am 28 year old ");
+function myAge(){
+    let Age=prompt("is 28 is my age?");
+    Age=Age.toLowerCase();
+    if (Age=="yes" || Age=="y") {
+        alert("you are right");
+        console.log("you are correct my age is 28");
+        correctAnswer+=1
+        
+    } else if(Age=="no" || Age=="n"){
+        alert("that is not correct, I am 28 year old ");
+        console.log("that is not correct,  I am 28 year old ");
+        
+    } else {
+        alert("you made wrong insert, any way I am 28 year old ");
+        console.log("you made wrong insert, any way I am 28 year old ");
+    }
 }
+myAge();
+
 
 // This is for geuss my birthday place 
 let placeB=prompt("Do I born in Iraq?");
