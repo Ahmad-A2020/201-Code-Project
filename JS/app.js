@@ -112,32 +112,34 @@ function monthFun(){
 }
 monthFun();
 // 6th question Lab 03
-
-let guss= prompt("Lets play togather. Give me anumber? and I will tell you if you match ");
-let correctNum=5;
-let i =1;
-if (guss==correctNum){
-    alert(`You made it from the first time. The correct number is ${correctNum}`);
-    correctAnswer+=1
-}
-
-while ( i<5 && guss !=correctNum) {
-    i+=1;
-    if (guss>correctNum){
-        alert("Your number is higher than the correct number");
-    } else{     
-        alert("Your number is Lower than the correct number");
-    }
-    guss= prompt("Lets tray again. Give me a number ");
-
+function gussNun(){
+    let guss= prompt("Lets play togather. Give me anumber? and I will tell you if you match ");
+    let correctNum=5;
+    let i =1;
     if (guss==correctNum){
-        alert(`Finally You made it !. The correct number is ${correctNum}`);
+        alert(`You made it from the first time. The correct number is ${correctNum}`);
         correctAnswer+=1
     }
-}
-if (i==5) {
-    alert("You have consume all of your chance. The correct answer number is "+correctNum);
-}
+
+    while ( i<5 && guss !=correctNum) {
+        i+=1;
+        if (guss>correctNum){
+            alert("Your number is higher than the correct number");
+        } else{     
+            alert("Your number is Lower than the correct number");
+        }
+        guss= prompt("Lets tray again. Give me a number ");
+
+        if (guss==correctNum){
+            alert(`Finally You made it !. The correct number is ${correctNum}`);
+            correctAnswer+=1
+        }
+    }
+    if (i==5) {
+        alert("You have consume all of your chance. The correct answer number is "+correctNum);
+    }
+   }
+gussNun();
 
 // 7th question Lab 03, guss belad alsham countries 
 
