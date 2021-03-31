@@ -8,22 +8,25 @@ alert("welcome to my website "+userName+" let us start ");
 }
 userName();
 // This is for geuss color 
-
-let myColor=prompt("is blue is my favirout color?");
-myColor=myColor.toLowerCase();
-if (myColor=="yes"|| myColor== "y") {
-    alert("you are right");
-    console.log("you are correct my faviroyt color is Blue");
-    correctAnswer+=1
-    
-} else if(myColor=="no" || myColor== "n"){
-    alert("that is not correct, my favirout color is black ");
-    console.log("that is not correct, my favirout color is black ");
-    
-} else {
-    alert("you made wrong insert, any way my favirout color is Blue");
-    console.log("you made wrong insert, any way my favirout color is Blue");
+function faviroutColor(){
+    let myColor=prompt("is blue is my favirout color?");
+    myColor=myColor.toLowerCase();
+    if (myColor=="yes"|| myColor== "y") {
+        alert("you are right");
+        console.log("you are correct my faviroyt color is Blue");
+        correctAnswer+=1
+        
+    } else if(myColor=="no" || myColor== "n"){
+        alert("that is not correct, my favirout color is black ");
+        console.log("that is not correct, my favirout color is black ");
+        
+    } else {
+        alert("you made wrong insert, any way my favirout color is Blue");
+        console.log("you made wrong insert, any way my favirout color is Blue");
+    }
 }
+
+faviroutColor();
 
 // This is for geuss my age 
 let Age=prompt("is 28 is my age?");
