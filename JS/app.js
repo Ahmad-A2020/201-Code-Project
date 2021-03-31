@@ -142,27 +142,29 @@ function gussNun(){
 gussNun();
 
 // 7th question Lab 03, guss belad alsham countries 
+function gussCountries(){
+    let s=0
+    let check=true
+    while (s<6 && check) {
+        s+=1;
+        let countries=['jordan','syria','lebanon','palestine'];
+        let gussCountry=prompt("Guss arab country ");
+        gussCountry=gussCountry.toLowerCase();
 
-let s=0
-let check=true
-while (s<6 && check) {
-    s+=1;
-    let countries=['jordan','syria','lebanon','palestine'];
-    let gussCountry=prompt("Guss arab country ");
-    gussCountry=gussCountry.toLowerCase();
+        for (let k=0 ; k<countries.length;k++){
+            if (gussCountry== countries[k]){
+                alert('you made it, the correct answers are '+countries);
+                check=false;
+                correctAnswer+=1
+                break;            
+            }
+        }
+        if(s==6){
+            alert('You have cosumed all of your chance. However the correct answers are '+countries);
 
-    for (let k=0 ; k<countries.length;k++){
-        if (gussCountry== countries[k]){
-            alert('you made it, the correct answers are '+countries);
-            check=false;
-            correctAnswer+=1
-            break;            
         }
     }
-    if(s==6){
-        alert('You have cosumed all of your chance. However the correct answers are '+countries);
-
-    }
 }
+gussCountries();
 // To add counter of correct answer, I have used correctAnswer+=1
 alert(`Number of Your correct answer is: ${correctAnswer}`);
