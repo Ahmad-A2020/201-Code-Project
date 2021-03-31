@@ -141,6 +141,8 @@ function gussNun(){
    }
 gussNun();
 
+
+
 // 7th question Lab 03, guss belad alsham countries 
 function gussCountries(){
     let s=0
