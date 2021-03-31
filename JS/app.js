@@ -50,22 +50,27 @@ myAge();
 
 
 // This is for geuss my birthday place 
-let placeB=prompt("Do I born in Iraq?");
-placeB=placeB.toLowerCase() ;
-alert(placeB)
-if (placeB=="yes" || placeB== "y") {
-    alert("NO, that is wrong. I was born in Oman");
-    console.log("NO, that is wrong. I was born in Oman");
-    
-} else if(placeB=="no" || placeB== "n"){
-    alert("that is correct, I was born in Oman ");
-    console.log("that is correct, I was born in Oman ");
-    correctAnswer+=1
-    
-} else {
-    alert("you made wrong insert, anyway I was born in Oman ");
-    console.log("you made wrong insert, anyway I was born in Oman ");
+function birthdayPlace(){
+    let placeB=prompt("Do I born in Iraq?");
+    placeB=placeB.toLowerCase() ;
+    alert(placeB)
+    if (placeB=="yes" || placeB== "y") {
+        alert("NO, that is wrong. I was born in Oman");
+        console.log("NO, that is wrong. I was born in Oman");
+        
+    } else if(placeB=="no" || placeB== "n"){
+        alert("that is correct, I was born in Oman ");
+        console.log("that is correct, I was born in Oman ");
+        correctAnswer+=1
+        
+    } else {
+        alert("you made wrong insert, anyway I was born in Oman ");
+        console.log("you made wrong insert, anyway I was born in Oman ");
+    }
 }
+birthdayPlace();
+
+
 
 // This is for jordan capital
 let Capital=prompt("is Amman Capital of Jordan?");
