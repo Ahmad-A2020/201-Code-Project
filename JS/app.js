@@ -73,21 +73,24 @@ birthdayPlace();
 
 
 // This is for jordan capital
-let Capital=prompt("is Amman Capital of Jordan?");
-Capital= Capital.toLowerCase();
-if (Capital=="yes" || Capital== "y") {
-    alert("you are right");
-    console.log("you are correct Amman is a capital of Jordan ");
-    correctAnswer+=1
-    
-} else if(Capital=="no" || Capital== "n"){
-    alert("that is not correct, Amman is a capital of Jordan");
-    console.log("that is not correct,  Amman is a capital of Jordan");
-    
-} else {
-    alert("you made wrong insert, anyway Amman is a capital of Jordan ");
-    console.log("you made wrong insert, anyway Amman is a capital of Jordan ");
+function jordanCapital(){
+    let Capital=prompt("is Amman Capital of Jordan?");
+    Capital= Capital.toLowerCase();
+    if (Capital=="yes" || Capital== "y") {
+        alert("you are right");
+        console.log("you are correct Amman is a capital of Jordan ");
+        correctAnswer+=1
+        
+    } else if(Capital=="no" || Capital== "n"){
+        alert("that is not correct, Amman is a capital of Jordan");
+        console.log("that is not correct,  Amman is a capital of Jordan");
+        
+    } else {
+        alert("you made wrong insert, anyway Amman is a capital of Jordan ");
+        console.log("you made wrong insert, anyway Amman is a capital of Jordan ");
+    }
 }
+jordanCapital();
 
 // This is for month
 let month=prompt("do we in Ramadan?");
