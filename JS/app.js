@@ -93,21 +93,24 @@ function jordanCapital(){
 jordanCapital();
 
 // This is for month
-let month=prompt("do we in Ramadan?");
-month=month.toLowerCase() ;
-if (month=="yes" || month=="y") {
-    alert("NO, that is wrong. Ramdan is the next month");
-    console.log("NO, that is wrong. Ramdan is the next month");
-    
-} else if(month=="no" || month=="n"){
-    alert("that is correct, Ramdan is the next month ");
-    console.log("that is correct,  Ramdan is the next month ");
-    correctAnswer+=1
-    
-} else {
-    alert("you made wrong insert, anyway Ramdan is the next month ");
-    console.log("you made wrong insert, anyway Ramdan is the next month ");
+function monthFun(){
+    let month=prompt("do we in Ramadan?");
+    month=month.toLowerCase() ;
+    if (month=="yes" || month=="y") {
+        alert("NO, that is wrong. Ramdan is the next month");
+        console.log("NO, that is wrong. Ramdan is the next month");
+        
+    } else if(month=="no" || month=="n"){
+        alert("that is correct, Ramdan is the next month ");
+        console.log("that is correct,  Ramdan is the next month ");
+        correctAnswer+=1
+        
+    } else {
+        alert("you made wrong insert, anyway Ramdan is the next month ");
+        console.log("you made wrong insert, anyway Ramdan is the next month ");
+    }
 }
+monthFun();
 // 6th question Lab 03
 
 let guss= prompt("Lets play togather. Give me anumber? and I will tell you if you match ");
